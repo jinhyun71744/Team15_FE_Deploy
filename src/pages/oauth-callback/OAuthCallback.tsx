@@ -2,7 +2,7 @@ import { useAuthStore } from '@/features/auth/model/useAuthStore';
 import { useEffect } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 
-export default function GoogleOAuthCallback() {
+export default function OAuthCallback() {
   const navigate = useNavigate();
   const { provider } = useParams();
   const login = useAuthStore((state) => state.login);
